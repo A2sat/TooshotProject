@@ -1,0 +1,23 @@
+name: cypress tests
+
+on: 
+  push:
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '23.6.0'
+    
+    - name: Install project dependencies
+      run: npm install
+      
+    - name: Run cypress tests
+      run: npx cypress run
