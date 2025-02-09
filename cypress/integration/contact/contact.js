@@ -32,4 +32,5 @@ cy.get('#loginusername').type(this.data.Username)
 //cy.get('#loginusername').clear()
 cy.get('#loginpassword').type(this.data.Password)
 cy.get("button[onclick='logIn()']").click()
+
 })
