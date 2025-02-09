@@ -21,6 +21,7 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
+  projectId: "36g2ig",
   env: {
     baseURL: "https://www.demoblaze.com/",
   },
